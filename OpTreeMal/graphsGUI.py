@@ -2,6 +2,7 @@ import time
 import networkx as nx
 import matplotlib.pyplot as plt
 import AlgorithmFunction as AlgorithmFunction
+from networkx.drawing.nx_agraph import graphviz_layout
 
 
 def visualize_search(order, title, G, pos):
@@ -27,6 +28,6 @@ G = nx.Graph()
 G.add_edges_from(
     [("A", "B"), ("A", "C"), ("B", "D"), ("A", "B"), ("B", "E"), ("C", "F"), ("C", "G")]
 )
-pos = nx.spring_layout(G)
+pos = nx.nx_agraph.graphviz_layout(G, prog="dot")
 
 visualize_search(AlgorithmFunction.order_bfs(G, "A"), "BFS Visualization", G, pos)
