@@ -26,8 +26,9 @@ def visualize_search(order, title, G, pos):
 
 G = nx.Graph()
 G.add_edges_from(
-    [("A", "B"), ("A", "C"), ("B", "D"), ("A", "B"), ("B", "E"), ("C", "F"), ("C", "G")]
+    [("A", "B"), ("A", "C"), ("B", "D"), ("B", "E"), ("C", "F"), ("C", "G"), ("D", "H"), ("D", "I"), ("E", "J"), ("E", "K"), ("F", "L"), ("F", "M"), ("G", "N"), ("G", "O")]
 )
+
 pos = nx.nx_agraph.graphviz_layout(G, prog="dot")
 
-visualize_search(AlgorithmFunction.order_bfs(G, "A"), "BFS Visualization", G, pos)
+visualize_search(AlgorithmFunction.order_dfs(G, "A"), "BFS Visualization", G, pos)
