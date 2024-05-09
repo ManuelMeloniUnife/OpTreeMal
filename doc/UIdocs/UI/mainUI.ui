@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>854</width>
-    <height>600</height>
+    <width>800</width>
+    <height>685</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -30,7 +30,7 @@
    <double>1.000000000000000</double>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(12, 12, 12);
+   <string notr="true">background-color: rgb(12,12,12);
 </string>
   </property>
   <property name="iconSize">
@@ -44,6 +44,19 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>30</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
@@ -112,6 +125,19 @@
              <number>0</number>
             </property>
             <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
              <widget class="QPushButton" name="pushButton_2">
               <property name="minimumSize">
                <size>
@@ -121,21 +147,38 @@
               </property>
               <property name="font">
                <font>
-                <family>Verdana</family>
+                <family>Andale Mono</family>
                 <pointsize>18</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
+                <weight>50</weight>
+                <bold>false</bold>
                </font>
               </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
               <property name="styleSheet">
-               <string notr="true">background-color: #BB86FC;
+               <string notr="true">background-color: #1f1f1f;
 color:white;
-border-radius:5px;</string>
+border-radius:5px;
+font-fmaily:&quot;space grotesk&quot;</string>
               </property>
               <property name="text">
                <string>Create a new tree</string>
               </property>
              </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
             </item>
             <item>
              <widget class="QPushButton" name="pushButton">
@@ -147,21 +190,38 @@ border-radius:5px;</string>
               </property>
               <property name="font">
                <font>
-                <family>Verdana</family>
+                <family>Andale Mono</family>
                 <pointsize>18</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
+                <weight>50</weight>
+                <bold>false</bold>
                </font>
               </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
               <property name="styleSheet">
-               <string notr="true">background-color: #BB86FC;
+               <string notr="true">background-color: #1f1f1f;
 color:white;
-border-radius:5px;</string>
+border-radius:5px;
+font-fmaily:&quot;space grotesk&quot;</string>
               </property>
               <property name="text">
                <string>Generate a random tree</string>
               </property>
              </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
             </item>
            </layout>
           </item>
@@ -191,7 +251,7 @@ border-radius:5px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>854</width>
+     <width>800</width>
      <height>24</height>
     </rect>
    </property>

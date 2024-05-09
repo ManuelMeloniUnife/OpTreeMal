@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QWidget
 class MyGUI(QMainWindow):
     def __init__(self):
         super(MyGUI, self).__init__()
-        uic.loadUi('../doc/UIdocs/UI/mainUI2.ui', self) #../doc/UIdocs/UI/mainUI.ui
+        uic.loadUi('../doc/UIdocs/UI/mainUI.ui', self) #../doc/UIdocs/UI/mainUI.ui
         self.show()
 
 
